@@ -6,7 +6,7 @@ class SquarerootController < ApplicationController
 
   def squareroot_calculate
     @number = params.fetch("number").to_f
-    @squared_number = @number**2
+    @sqrt_number = @number**(0.5)
     render({ :template => "calculator_templates/display_squareroot_results" })
   end
 
